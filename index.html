@@ -74,6 +74,15 @@ nav a:hover { color: #e94b8a; }
   font-size: 1.1rem;
 }
 
+.hero-text button {
+  padding: 12px 28px;
+  background: #e94b8a;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 .hero-image {
   width: 420px;
   height: 260px;
@@ -165,26 +174,43 @@ footer {
 /* MOBILE */
 @media (max-width: 768px) {
 
-  /* HEADER COMPACTO */
+  /* HEADER MOBILE */
   header {
+    flex-direction: column;
+    align-items: center;
     padding: 10px 14px;
+    gap: 8px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
   }
 
   .logo img {
-    height: 36px;
+    height: 40px;
   }
 
   .logo h1 {
-    font-size: 0.9rem;
-    white-space: nowrap;
+    font-size: 1.1rem;
+    text-align: center;
+    white-space: normal;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
   }
 
   nav ul {
-    gap: 12px;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
   }
 
   nav a {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   /* HERO */
@@ -232,7 +258,7 @@ footer {
 
 <header>
   <div class="logo">
-    <img src="imagens/logo.png">
+    <img src="imagens/logo.png" alt="Logo QueenFit">
     <h1>QueenFit • Moda Fitness Feminina</h1>
   </div>
   <nav>
@@ -249,7 +275,7 @@ footer {
     <p>Roupas feitas para performance, conforto e estilo.</p>
   </div>
   <div class="hero-image">
-    <img src="imagens/mulher.jpeg">
+    <img src="imagens/mulher.jpeg" alt="Moda Fitness">
   </div>
 </section>
 
